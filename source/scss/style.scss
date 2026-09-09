@@ -11,5 +11,12 @@
 @use 'blocks/header';
 @use 'blocks/main-page';
 @use 'blocks/hero';
+@use 'blocks/about';
 
 @use 'blocks/footer';
+
+// .header,
+// .hero,
+// .about {
+//   display: none !important;
+// }

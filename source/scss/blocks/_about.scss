@@ -1,0 +1,91 @@
+@use 'helpers' as *;
+
+.about {
+
+  &__container {
+    padding-block: rem(70);
+
+  }
+
+  &__title {
+    margin-bottom: rem(25);
+  }
+
+  &__text {
+  @include fluid-text(18, 16);
+
+    line-height: 1.9;
+    color: var(--color-text);
+    margin-bottom: rem(70);
+
+    @include mobile {
+      line-height: 2;
+    }
+  }
+
+  &__subtext {
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-accent-text);
+  }
+
+  &__inner {
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 36% auto;
+    column-gap: rem(32);
+
+    @include tablet {
+      row-gap: rem(32);
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__container-img-1 {
+    display: flex;
+    flex-direction: column;
+    column-gap: rem(32);
+    row-gap: rem(36);
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      grid-column: 1 / 3;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+  &__container-img-2 {
+    @include tablet {
+      width: 100%;
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__img {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__img--another {
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
