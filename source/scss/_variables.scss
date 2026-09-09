@@ -1,0 +1,15 @@
+@use 'helpers' as *;
+
+:root {
+  --color-light: #FFFFFF;
+  --color-dark: #000000;
+
+  --font-family-base: sans-serif; // добавляем свой шрифт
+  --font-family-accent: sans-serif; // добавляем свой шрифт
+
+   --container-width: #{rem(1550)};// добавляем свой размеры контейнера desktop
+  --container-padding-x: #{rem(90)}; //добавляем свой размеры внутренних отступов у контейнера на desktop
+
+
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,62 @@
+@use 'helpers' as *;
+
+body {
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+
+}
+
+//ниже для заголовков можно использовать mixin fluid-text
+
+h1, .h1 {
+
+}
+
+h2, .h2 {
+
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+h6, .h6 {
+
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+:focus-visible {
+  outline: rem(2), solid var(--color-light); //добавляем цвет контрастирующий с основным в проекте
+  outline-offset: rem(4);
+  transition-duration: 0s !important;
+}
