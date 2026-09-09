@@ -1,0 +1,13 @@
+@use 'helpers' as *;
+
+.button {
+  @include fluid-text(24, 12);
+
+  padding: rem(19) rem(50);
+  color: var(--color-accent-bg);
+  background-color: var(--color-dark);
+
+  @include mobile {
+    padding-top: rem(10);
+  }
+}

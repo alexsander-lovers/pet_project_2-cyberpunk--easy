@@ -5,9 +5,105 @@
 })
 
 <body>
-  <main>
-    @@include('html_components/header.html')
+  <main class="main-page">
+    <section class="hero">
+      <h1 class="visually-hidden">Киберпанк 2077</h1>
+      @@include('html_components/header.html')
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper hero-swiper__wrapper">
+          <div class="swiper-slide hero-swiper__slide">
+            <picture>
+              <!-- <source type="image/afiv" media="(max-width: 767px)"
+          srcset="images/hero/hero-mobile-1.afiv 1x, images/hero/hero-mobile-1@2x.afiv 2x, images/hero/hero-mobile-1@3x.afiv 3x">
+        <source type="image/afiv" media="(max-width: 1023px)"
+          srcset="images/hero/hero-tablet-1.afiv 1x, images/hero/hero-tablet-1@2x.afiv 2x, images/hero/hero-tablet-1@3x.afiv 3x">
+        <source type="image/afiv"
+          srcset="images/hero/hero-desktop-1.afiv 1x, images/hero/hero-desktop-1@2x.afiv 2x, images/hero/hero-desktop-1@3x.afiv 3x">
+
+        <source type="image/webp" media="(max-width: 767px)"
+          srcset="images/hero/hero-mobile-1.webp 1x, images/hero/hero-mobile-1@2x.webp 2x, images/hero/hero-mobile-1@3x.webp 3x">
+        <source type="image/webp" media="(max-width: 1023px)"
+          srcset="images/hero/hero-tablet-1.webp 1x, images/hero/hero-tablet-1@2x.webp 2x, images/hero/hero-tablet-1@3x.webp 3x">
+        <source type="image/webp"
+          srcset="images/hero/hero-desktop-1.webp 1x, images/hero/hero-desktop-1@2x.webp 2x, images/hero/hero-desktop-1@3x.webp 3x"> -->
+
+              <source type="image/jpeg" media="(max-width: 767px)"
+                srcset="images/hero/hero-mobile-1.jpg 1x, images/hero/hero-mobile-1@2x.jpg 2x, images/hero/hero-mobile-1@3x.jpg 3x">
+              <source type="image/jpeg" media="(max-width: 1023px)"
+                srcset="images/hero/hero-tablet-1.jpg 1x, images/hero/hero-tablet-1@2x.jpg 2x, images/hero/hero-tablet-1@3x.jpg 3x">
+              <source type="image/jpeg"
+                srcset="images/hero/hero-desktop-1.jpg 1x, images/hero/hero-desktop-1@2x.jpg 2x, images/hero/hero-desktop-1@3x.jpg 3x">
+
+              <img class="hero-swiper__img" src="images/hero/hero-desktop-1.jpg" alt=""
+                style="width: 100%; min-height: 100vh; object-fit: cover; z-index: -1;">
+            </picture>
+          </div>
+          <div class="swiper-slide hero-swiper__slide">
+            <picture>
+              <!-- <source type="image/afiv" media="(max-width: 767px)"
+          srcset="images/hero/hero-mobile-2.afiv 1x, images/hero/hero-mobile-2@2x.afiv 2x, images/hero/hero-mobile-2@3x.afiv 3x">
+        <source type="image/afiv" media="(max-width: 1023px)"
+          srcset="images/hero/hero-tablet-2.afiv 1x, images/hero/hero-tablet-2@2x.afiv 2x, images/hero/hero-tablet-2@3x.afiv 3x">
+        <source type="image/afiv"
+          srcset="images/hero/hero-desktop-2.afiv 1x, images/hero/hero-desktop-2@2x.afiv 2x, images/hero/hero-desktop-2@3x.afiv 3x">
+
+        <source type="image/webp" media="(max-width: 767px)"
+          srcset="images/hero/hero-mobile-2.webp 1x, images/hero/hero-mobile-2@2x.webp 2x, images/hero/hero-mobile-@3x.webp 3x">
+        <source type="image/webp" media="(max-width: 1023px)"
+          srcset="images/hero/hero-tablet-2.webp 1x, images/hero/hero-tablet-2@2x.webp 2x, images/hero/hero-tablet-2@3x.webp 3x">
+        <source type="image/webp"
+          srcset="images/hero/hero-desktop-2.webp 1x, images/hero/hero-desktop-2@2x.webp 2x, images/hero/hero-desktop-2@3x.webp 3x"> -->
+
+              <source type="image/jpeg" media="(max-width: 767px)"
+                srcset="images/hero/hero-mobile-2.jpg 1x, images/hero/hero-mobile-2@2x.jpg 2x, images/hero/hero-mobile-2@3x.jpg 3x">
+              <source type="image/jpeg" media="(max-width: 1023px)"
+                srcset="images/hero/hero-tablet-2.jpg 1x, images/hero/hero-tablet-2@2x.jpg 2x, images/hero/hero-tablet-2@3x.jpg 3x">
+              <source type="image/jpeg"
+                srcset="images/hero/hero-desktop-.jpg 1x, images/hero/hero-desktop-2@2x.jpg 2x, images/hero/hero-desktop-2@3x.jpg 3x">
+
+              <img class="hero-swiper__img" src="images/hero/hero-desktop-2.jpg" alt=""
+                style="width: 100%; min-height: 100vh; object-fit: cover; z-index: -1;">
+            </picture>
+          </div>
+          <div class="swiper-slide hero-swiper__slide">
+            <picture>
+              <!-- <source type="image/afiv" media="(max-width: 767px)"
+          srcset="images/hero/hero-mobile-3.afiv 1x, images/hero/hero-mobile-3@2x.afiv 2x, images/hero/hero-mobile-3@3x.afiv 3x">
+        <source type="image/afiv" media="(max-width: 1023px)"
+          srcset="images/hero/hero-tablet-3.afiv 1x, images/hero/hero-tablet-3@2x.afiv 2x, images/hero/hero-tablet-3@3x.afiv 3x">
+        <source type="image/afiv"
+          srcset="images/hero/hero-desktop-3.afiv 1x, images/hero/hero-desktop-3@2x.afiv 2x, images/hero/hero-desktop-3@3x.afiv 3x">
+
+        <source type="image/webp" media="(max-width: 767px)"
+          srcset="images/hero/hero-mobile-3.webp 1x, images/hero/hero-mobile-3@2x.webp 2x, images/hero/hero-mobile-3@3x.webp 3x">
+        <source type="image/webp" media="(max-width: 1023px)"
+          srcset="images/hero/hero-tablet-3.webp 1x, images/hero/hero-tablet-3@2x.webp 2x, images/hero/hero-tablet-3@3x.webp 3x">
+        <source type="image/webp"
+          srcset="images/hero/hero-desktop-3.webp 1x, images/hero/hero-desktop-3@2x.webp 2x, images/hero/hero-desktop-3@3x.webp 3x"> -->
+
+              <source type="image/jpeg" media="(max-width: 767px)"
+                srcset="images/hero/hero-mobile-3.jpg 1x, images/hero/hero-mobile-3@2x.jpg 2x, images/hero/hero-mobile-3@3x.jpg 3x">
+              <source type="image/jpeg" media="(max-width: 1023px)"
+                srcset="images/hero/hero-tablet-3.jpg 1x, images/hero/hero-tablet-3@2x.jpg 2x, images/hero/hero-tablet-3@3x.jpg 3x">
+              <source type="image/jpeg"
+                srcset="images/hero/hero-desktop-3.jpg 1x, images/hero/hero-desktop-3@2x.jpg 2x, images/hero/hero-desktop-3@3x.jpg 3x">
+
+              <img class="hero-swiper__img" src="images/hero/hero-desktop-3.jpg" alt=""
+                style="width: 100%; min-height: 100vh; object-fit: cover; z-index: -1;">
+            </picture>
+
+          </div>
+        </div>
+      </div>
+      <div class="hero__wrapper-text container">
+        <div class="hero__inner">
+          <h2 class="hero__title">Доступно на всех платформах</h2>
+          <a class="hero__link button" href="/" target="_blank">Узнать больше</a>
+        </div>
+      </div>
+    </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 

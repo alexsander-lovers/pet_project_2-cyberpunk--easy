@@ -1,6 +1,8 @@
 @use 'helpers' as *;
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-family-base);
   background-color: var(--color-light);
   color: var(--color-dark);
@@ -19,11 +21,11 @@ h6, .h6 {
 //ниже для заголовков можно использовать mixin fluid-text
 
 h1, .h1 {
-
+  @include fluid-text(62, 30);
 }
 
 h2, .h2 {
-
+  @include fluid-text(62, 30);
 }
 
 h3, .h3 {
