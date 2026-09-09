@@ -1,9 +1,12 @@
 @use 'helpers' as *;
 
 .about {
+  @include mobile {
+    padding-bottom: rem(70);
+  }
 
   &__container {
-    padding-block: rem(70);
+    padding-top: rem(70);
 
   }
 
@@ -30,6 +33,7 @@
   }
 
   &__inner {
+    padding-bottom: rem(70);
     @include mobile {
       display: contents;
     }
