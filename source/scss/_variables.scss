@@ -3,12 +3,27 @@
 :root {
   --color-light: #FFFFFF;
   --color-dark: #000000;
+  --color-accent-text: #52BEDC;
+  --color-text: #777777;
+  --color-accent-bg: #F8F200;
 
-  --font-family-base: sans-serif; // добавляем свой шрифт
-  --font-family-accent: sans-serif; // добавляем свой шрифт
+  --font-family-base: 'Roboto' sans-serif;
+  --font-family-accent: 'Archangelsk' sans-serif;
 
-   --container-width: #{rem(1550)};// добавляем свой размеры контейнера desktop
-  --container-padding-x: #{rem(90)}; //добавляем свой размеры внутренних отступов у контейнера на desktop
+   --container-width: #{rem(1280)};
+  --container-padding-x: #{rem(320)};
+
+  @include laptop {
+    --container-padding-x: #{rem(40)};
+  }
+
+  @include tablet {
+    --container-padding-x: #{rem(36)};
+  }
+
+  @include mobile {
+    --container-padding-x: #{rem(12)};
+  }
 
 
   --transition-duration: 0.2s;
