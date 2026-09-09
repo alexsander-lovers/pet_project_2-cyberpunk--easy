@@ -1,0 +1,8 @@
+@use 'helpers' as *;
+
+.logo-company {
+  @include mobile {
+    width: rem(117);
+    height: rem(50);
+  }
+}

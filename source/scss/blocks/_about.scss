@@ -82,6 +82,7 @@
   }
 
   &__img {
+    clip-path: polygon(rem(60) 0%, 100% 0%, 100% calc(100% - rem(60)), calc(100% - rem(60)) 100%, 0% 100%, 0% rem(60));
     @include mobile {
       width: 100%;
     }

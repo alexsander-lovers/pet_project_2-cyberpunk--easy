@@ -1,0 +1,8 @@
+@use 'helpers' as *;
+
+.logo-game {
+  @include mobile {
+    width: rem(200);
+    // height: rem(50);
+  }
+}

@@ -5,7 +5,7 @@ const swiperComments = new Swiper('.swiper', {
   loop: true,
   autoHeight: true,
   speed: 1000,
-  grabCursor: true,
+  allowTouchMove: false,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
