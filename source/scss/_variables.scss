@@ -6,14 +6,14 @@
   --color-accent-text: #52BEDC;
   --color-text: #777777;
   --color-bg: #E6E6E6;
-
-
   --color-accent-bg: #F8F200;
+  --color-accent-bg-hover: #FF6347;
+
 
   --font-family-base: 'Roboto', sans-serif;
   --font-family-accent: 'Archangelsk', sans-serif;
 
-   --container-width: #{rem(1280)};
+  --container-width: #{rem(1280)};
   --container-padding-x: #{rem(320)};
 
   @include laptop {

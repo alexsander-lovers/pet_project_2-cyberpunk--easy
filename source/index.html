@@ -107,7 +107,8 @@
     <section class="about">
       <div class="about__container container">
         <h2 class="about__title">Найт-Сити изменит тебя навсегда!</h2>
-        <p class="about__text"><dfn class="about__subtext">Cyberpunk 2077</dfn> — приключенческая ролевая игра, действие
+        <p class="about__text"><dfn class="about__subtext subtext">Cyberpunk 2077</dfn> — приключенческая ролевая игра,
+          действие
           которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты
           играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты,
           навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что
@@ -164,6 +165,8 @@
 
               <source type="image/jpeg" media="(max-width: 767px)"
                 srcset="images/about/about-mobile-3.jpg 1x, images/about/about-mobile-3.jpg 2x, images/about/about-mobile-3.jpg 3x">
+              <source type="image/jpeg" media="(max-width: 1023px)"
+                srcset="images/about/about-tablet-3.jpg 1x, images/about/about-tablet-3.jpg 2x, images/about/about-tablet-3.jpg 3x">
               <source type="image/jpeg"
                 srcset="images/about/about-desktop-3.jpg 1x, images/about/about-desktop-3.jpg 2x, images/about/about-desktop-3.jpg 3x">
               <img class="about__img about__img--another" src="images/about/about-desktop-3.jpg" alt="" width="788"
@@ -175,9 +178,140 @@
     </section>
 
     <section class="reviews">
+      <div class="reviews__container container">
+        <div class="reviews__inner">
+          <svg width="132" height="132">
+            <use href="images/icons/sprite/isons.svg#reviews-icon" />
+          </svg>
+          <h2 class="reviews__title">Играй и выигрывай!</h2>
+        </div>
+        <p class="reviews__subtext">Играй в <dfn class="subtext">Cyberpunk 2077</dfn> и получи возможность выиграть
+          консоль <dfn class="subtext">Xbox Series X</dfn> или <dfn class="subtext">Sony PlayStation 5!</dfn> Заполни
+          форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;&rpar;</p>
+        <div class="reviews__container-body">
+          <div class="reviews__container-form form">
+            <form class="form__main" action="https://httpbin.org" method="post">
+              <label class="">
+                <input class="form__field form__field--border" type="text" id="userName" name="userName"
+                  placeholder="Как тебя зовут?" required autocomplete="name">
+              </label>
+              <label>
+                <input class="form__field form__field--border" type="email" id="useremail" name="userEmail"
+                  placeholder="Твой е-mail" required autocomplete="email">
+              </label>
+              <div class="form__group">
+                <label class="form__title-file" for="screenshot-upload">Прикрепить скриншот</label>
+                <input class="form__field" type="file" id="screenshot-upload" name="screenshot"
+                  accept="image/png, image/jpeg, image/pdf" style="display: none;">
+                <ul class="form__list">
+                  <li class="form__item">
+                    <span class="form__text">.png</span>
+                  </li>
+                  <li class="form__item">
+                    <span class="form__text">.jpg</span>
+                  </li>
+                  <li class="form__item">
+                    <span class="form__text">.pdf</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="form__wrapper">
+                <button class="form__button button" type="submit">Отправить</button>
+                <label class="form__title-checkbox" for="agreement">
+                  <span class="form__custom-checkbox"></span>
+                  <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" value="yes" checked>
+                  Согласен на обработку персональных данных
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="reviews__container-img">
+            <picture>
+              <!-- <source type="image/avif" media="(max-width: 767px)"
+                srcset="images/reviews/reviews-mobile-1.avif 1x, images/reviews/reviews-mobile-1@2x.avif 2x, images/reviews/reviews-mobile-1@3x.avif 3x">
+              <source type="image/avif" media="(max-width: 1023px)"
+                srcset="images/reviews/reviews-tablet-1.avif 1x, images/reviews/reviews-tablet-1@2x.avif 2x, images/reviews/reviews-tablet-1@3x.avif 3x">
+              <source type="image/avif"
+                srcset="images/reviews/reviews-desktop-1.avif 1x, images/reviews/reviews-desktop-1@2x.avif 2x, images/reviews/reviews-desktop-1@3x.avif 3x">
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="images/reviews/reviews-mobile-1.webp 1x, images/reviews/reviews-mobile-1@2x.webp 2x, images/reviews/reviews-mobile-1@3x.webp 3x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="images/reviews/reviews-tablet-1.webp 1x, images/reviews/reviews-tablet-1@2x.webp 2x, images/reviews/reviews-tablet-1@3x.webp 3x">
+              <source type="image/webp"
+                srcset="images/reviews/reviews-desktop-1.webp 1x, images/reviews/reviews-desktop-1@2x.webp 2x, images/reviews/reviews-desktop-1@3x.webp 3x"> -->
+              <source type="image/jpeg" media="(max-width: 767px)"
+                srcset="images/reviews/reviews-mobile-1.png 1x, images/reviews/reviews-mobile-1@2x.png 2x, images/reviews/reviews-mobile-1@3x.png 3x">
+              <source type="image/jpeg" media="(max-width: 1023px)"
+                srcset="images/reviews/reviews-tablet-1.png 1x, images/reviews/reviews-tablet-1@2x.png 2x, images/reviews/reviews-tablet-1@3x.png 3x">
+              <source type="image/jpeg"
+                srcset="images/reviews/reviews-desktop-1.png 1x, images/reviews/reviews-desktop-1@2x.png 2x, images/reviews/reviews-desktop-1@3x.png 3x">
+              <img class="reviews__img" src="images/reviews/reviews-desktop-1.png" width="788" height="456"
+                alt="Xbox Series X">
+            </picture>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="advantages">
+      <div class="advantages__container container">
+        <div class="advantages__wrapper-icons">
+          <picture class="advantages__picture">
+            <!-- <source type="image/avif" media="(max-width: 767px)"
+              srcset="images/advantages/advantages-mobile-1.avif 1x, images/advantages/advantages-mobile-1@2x.avif 2x, images/advantages/advantages-mobile-1@3x.avif 3x">
+            <source type="image/avif" media="(max-width: 1023px)"
+              srcset="images/advantages/advantages-tablet-1.avif 1x, images/advantages/advantages-tablet-1@2x.avif 2x, images/advantages/advantages-tablet-1@3x.avif 3x">
+            <source type="image/avif" media="(max-width: 1023px)"
+              srcset="images/advantages/advantages-desktop-1.avif 1x, images/advantages/advantages-desktop-1@2x.avif 2x, images/advantages/advantages-desktop-1@3x.avif 3x">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="images/advantages/advantages-mobile-1.webp 1x, images/advantages/advantages-mobile-1@2x.webp 2x, images/advantages/advantages-mobile-1@3x.webp 3x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="images/advantages/advantages-tablet-1.webp 1x, images/advantages/advantages-tablet-1@2x.webp 2x, images/advantages/advantages-tablet-1@3x.webp 3x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="images/advantages/advantages-desktop-1.webp 1x, images/advantages/advantages-desktop-1@2x.webp 2x, images/advantages/advantages-desktop-1@3x.webp 3x"> -->
+            <source type="image/jpeg" media="(max-width: 767px)"
+              srcset="images/advantages/advantages-mobile-1.png 1x, images/advantages/advantages-mobile-1@2x.png 2x, images/advantages/advantages-mobile-1@3x.png 3x">
+            <source type="image/jpeg" media="(max-width: 1023px)"
+              srcset="images/advantages/advantages-tablet-1.png 1x, images/advantages/advantages-tablet-1@2x.png 2x, images/advantages/advantages-tablet-1@3x.png 3x">
+            <source type="image/jpeg" media="(max-width: 1023px)"
+              srcset="images/advantages/advantages-desktop-1.png 1x, images/advantages/advantages-desktop-1@2x.png 2x, images/advantages/advantages-desktop-1@3x.png 3x">
+            <img class="advantages__img" src="images/advantages/advantages-desktop-1.png"
+              alt="Компьютер на экране которого находится девушка с аугментациями" width="624" height="430">
+          </picture>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <a class="advantages__link" href="/">
+                <svg class="advantages__icon icon" width="80" height="80">
+                  <use href="images/icons/sprite/isons.svg#advantages-icon-1" />
+                </svg>
+              </a>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__decorate" width="91" height="21">
+                <use href="images/icons/sprite/isons.svg#advantages-icon-2" />
+              </svg>
+            </li>
+            <li class="advantages__item">
+              <a class="advantages__link logo-game" href="/">
+                <img class="logo-game__img logo-game__img--another-width" src="images/logo/logo-game.svg"
+                  alt="Лого игры" width="320" height="80">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__wrapper-text">
+          <h2 class="advantages__title">Полное погружение вместе с HP</h2>
+          <p class="advantages__subtext">Погрузись в современные экшен-игры с реалистичным изображением с помощью
+            монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай
+            реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
+          <ul class="advantages__sub-list">
+            <li class="advantages__sub-item">Яркие насыщенные цвета</li>
+            <li class="advantages__sub-item">Кристальная четкость изображения</li>
+            <li class="advantages__sub-item">Быстрые движения и плавный геймплей</li>
+          </ul>
+          <a href="/" class="advantages__button button" target="_blank">Подробнее</a>
+        </div>
+      </div>
     </section>
 
     <section class="services">

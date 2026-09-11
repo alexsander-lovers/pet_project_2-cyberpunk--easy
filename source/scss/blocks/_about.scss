@@ -1,13 +1,9 @@
 @use 'helpers' as *;
 
 .about {
+  padding-block: rem(70);
   @include mobile {
-    padding-bottom: rem(70);
-  }
-
-  &__container {
-    padding-top: rem(70);
-
+    padding-bottom: rem(140);
   }
 
   &__title {
@@ -24,12 +20,6 @@
     @include mobile {
       line-height: 2;
     }
-  }
-
-  &__subtext {
-    font-weight: 700;
-    font-style: normal;
-    color: var(--color-accent-text);
   }
 
   &__inner {

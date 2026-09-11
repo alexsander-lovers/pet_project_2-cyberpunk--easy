@@ -8,17 +8,24 @@
 @use 'blocks/button';
 @use 'blocks/hero-swiper';
 @use 'blocks/logo-company';
+@use 'blocks/subtext';
+@use 'blocks/icon';
+@use 'blocks/form';
 
 @use 'blocks/header';
 @use 'blocks/main-page';
 @use 'blocks/hero';
 @use 'blocks/about';
+@use 'blocks/reviews';
+@use 'blocks/advantages';
 
 @use 'blocks/footer';
 
 // .header,
 // .hero,
 // .about,
-// .footer {
+// .footer,
+// .reviews,
+// .advantages{
 //   display: none !important;
 // }

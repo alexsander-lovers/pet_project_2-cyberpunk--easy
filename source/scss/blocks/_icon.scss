@@ -1,0 +1,9 @@
+@use 'helpers' as *;
+
+.icon {
+  color: var(--color-dark);
+
+  @include hover {
+    color: var(--color-accent-bg-hover);
+  }
+}

@@ -6,6 +6,12 @@
   top: 0;
   z-index: 10;
   background-color: transparent;
+  transition: background-color 0.3s ease;
+
+   &._scrolled {
+    background-color: var(--color-accent-bg);
+    padding-bottom: rem(20);
+  }
 
   &__container {
     display: flex;
@@ -21,6 +27,11 @@
 
   &__navigation {
     display: flex;
+  }
+
+  &__icons-wrapper {
+    display: flex;
+    align-items: center;
   }
 
    &__icon {

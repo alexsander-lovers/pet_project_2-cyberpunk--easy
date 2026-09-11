@@ -1,3 +1,4 @@
+const header = document.querySelector('.header');
 
 const swiperComments = new Swiper('.swiper', {
   // spaceBetween: 20,
@@ -11,3 +12,11 @@ const swiperComments = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
 })
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= window.innerHeight) {
+    header.classList.add('_scrolled');
+  } else {
+    header.classList.remove('_scrolled');
+  }
+});

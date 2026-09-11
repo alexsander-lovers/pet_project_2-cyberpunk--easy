@@ -1,0 +1,11 @@
+@use 'helpers' as *;
+
+.subtext {
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-accent-text);
+
+    @include hover {
+        color: var( --color-accent-bg-hover);
+    }
+}

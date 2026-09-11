@@ -3,6 +3,9 @@
 .logo-game {
   @include mobile {
     width: rem(200);
-    // height: rem(50);
+
+    // &__img--another-width {
+    //   width: rem(176);
+    // }
   }
 }
