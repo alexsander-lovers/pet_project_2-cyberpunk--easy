@@ -1,5 +1,3 @@
-const header = document.querySelector('.header');
-
 const swiperComments = new Swiper('.swiper', {
   // spaceBetween: 20,
   slidesPerView: 1,
@@ -12,6 +10,8 @@ const swiperComments = new Swiper('.swiper', {
     disableOnInteraction: false,
   },
 })
+
+const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= window.innerHeight) {
