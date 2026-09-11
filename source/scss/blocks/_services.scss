@@ -1,0 +1,126 @@
+@use 'helpers' as *;
+
+.services {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  &__container {
+    display: grid;
+    grid-template-columns: auto 49%;
+    column-gap: rem(32);
+
+    @include mobile {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__container-img {
+    @include laptop {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__picture {
+    @include tablet {
+      flex-grow: 1;
+    }
+  }
+
+  &__img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(50);
+    padding-block: rem(70);
+    padding-right: rem(320);
+
+    @include laptop {
+      padding-block: rem(40);
+      padding-right: rem(40);
+    }
+
+    @include mobile{
+      row-gap: rem(20);
+      padding-inline: rem(12);
+    }
+  }
+
+  &__title {
+    color: var(--color-light);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(15)
+  }
+
+  &__platform-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: rem(50);
+    column-gap: rem(80);
+    align-items: center;
+
+    @include mobile {
+      column-gap: rem(50);
+    }
+  }
+
+  &__subtext {
+    @include fluid-text(24, 20);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+
+    @include tablet {
+      row-gap: rem(15);
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-left: rem(42);
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: rem(32);
+      height: rem(32);
+      mask-repeat: no-repeat;
+      left: 0;
+      background-color: var(--color-accent-bg);
+    }
+
+    &:first-child {
+      &::before {
+        mask-image: url('../images/icons/services-icon-1.svg');
+      }
+    }
+
+     &:nth-child(2) {
+      &::before {
+        mask-image: url('../images/icons/services-icon-2.svg');
+      }
+    }
+
+    &:last-child {
+      &::before {
+        mask-image: url('../images/icons/services-icon-3.svg');
+      }
+    }
+  }
+
+  &__icon {
+    color: var(--color-accent-bg);
+  }
+}
