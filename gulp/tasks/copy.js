@@ -8,3 +8,8 @@ export const copyFavicons = () => {
     .pipe(app.gulp.dest(`${app.path.build.favicons}`))
     .pipe(app.plugins.browsersync.stream());
 };
+
+export const copyFonts = () => {
+  return app.gulp.src(`${app.path.srcFolder}/fonts/*.{woff,woff2}`, { encoding: false })
+    .pipe(app.gulp.dest(`${app.path.build.fonts}`));
+};

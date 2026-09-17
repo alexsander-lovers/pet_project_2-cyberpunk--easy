@@ -2,14 +2,13 @@ import gulp from 'gulp';
 
 import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js";
-import { copyManifest, copyFavicons } from "./gulp/tasks/copy.js";
+import { copyFonts, copyManifest } from "./gulp/tasks/copy.js";
 import { reset } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { convertToAvif, convertToWebp, optimizeRaster, copySvg } from "./gulp/tasks/images.js";
-import { otfToTtf, ttfToWoff2 } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftp } from "./gulp/tasks/ftp.js";
 
@@ -22,9 +21,8 @@ global.app = {
   plugins: plugins
 };
 
-const copy = gulp.parallel(copyManifest, copyFavicons);
+const copy = gulp.parallel(copyFonts, copyManifest);
 const images = gulp.parallel(convertToAvif, convertToWebp, optimizeRaster, copySvg);
-const font = gulp.series(otfToTtf, ttfToWoff2);
 
 function watcher () {
   gulp.watch(path.watch.files, gulp.series(copy,/*ftp*/)); /*copy, ftp для сервера*/
@@ -34,7 +32,7 @@ function watcher () {
   gulp.watch(path.watch.images, gulp.series(images,/*ftp*/));
 }
 
-const mainTasks = gulp.series(font, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(gulp.parallel(copy, html, scss, js, images));
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);

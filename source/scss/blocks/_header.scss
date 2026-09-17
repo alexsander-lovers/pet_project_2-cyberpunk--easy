@@ -6,7 +6,9 @@
   top: 0;
   z-index: 10;
   background-color: transparent;
+  transform: translate3d(0, 0, 0);
   transition: background-color 0.3s ease;
+  will-change: transform;
 
    &._scrolled {
     background-color: var(--color-accent-bg);
